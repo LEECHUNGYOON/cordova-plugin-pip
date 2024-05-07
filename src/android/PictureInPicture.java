@@ -56,8 +56,7 @@ public class PictureInPicture extends CordovaPlugin {
                 callback = null;
             }
 
-            PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
-            pluginResult.setKeepCallback(false); 
+            callbackContext.success("true"); 
 
             return true;
         } 
