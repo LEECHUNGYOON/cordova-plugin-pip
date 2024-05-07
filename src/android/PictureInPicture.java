@@ -48,6 +48,19 @@ public class PictureInPicture extends CordovaPlugin {
             this.isPipModeSupported(callbackContext);
             return true;
         } 
+        
+        // 2024-05-07 yoon: PIP Change Mode Event 삭제
+        else if(action.equals("offPipModeChanged")){
+
+            if(callback != null){
+                callback = null;
+            }
+
+            PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
+            pluginResult.setKeepCallback(false); 
+
+            return true;
+        } 
         return false;
     }
 

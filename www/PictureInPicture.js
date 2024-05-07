@@ -20,4 +20,9 @@ plugin.prototype.isPipModeSupported = function(success, error) {
     exec(success, error, "PictureInPicture", "isPipModeSupported", []);
 }
 
+// 2024-05-07 yoon: PIP Change Mode Event 삭제
+plugin.prototype.offPipModeChanged = function(success, error) {
+    exec(success, error, "PictureInPicture", "offPipModeChanged", []);
+}
+
 module.exports = new plugin();
