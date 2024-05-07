@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-pip",
+  "version": "0.0.2",
+  "description": "Picture-In-Picture support for Android.",
+  "cordova": {
+    "id": "cordova-plugin-pip",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "MindKind Creative",
+  "license": "ISC"
+}
